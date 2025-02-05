@@ -1,39 +1,68 @@
 body{
-    margin: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-h1{
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.conteiner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    height: 800px;
+    border: black solid 1px;
+    
+}
+
+.imagem{
+    height: 75px;
+    width: 250px;
+    margin-top: 45px;
+}
+
+.descricao{
+    margin: 10px;
+    font-size: 20px;
     text-align: center;
 }
 
-.area-input{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-input{
-    padding: 10px;
-    border: 1px solid #ccc;
+.btn{
+    background-color: #3373a7;
+    height: 30px;
+    width: 350px;
     border-radius: 5px;
 }
 
-button{
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-left: 10px;
-    cursor: pointer;
-}
-
-li{
-    list-style-type: none;
-}
-
-
-ul{
+.conteinerInput{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 15px;
+}
+
+.input{
+    margin: 2px;
+    height: 30px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.erro{
+    border-color: red;
+    border: 50px black solid;
+}
+
+.loginfacebook{
+    background-color: #3373a7;
+    height: 30px;
+    width: 350px;
+    border-radius: 5px;
 }

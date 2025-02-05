@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title> Aula 02 - Lista de Tarefas </title>
+    <title>Document</title>
 </head>
 <body>
 
-    <h1> lista de tarefas </h1>
+    <div class="conteiner">
 
-    <div class="area-input">
-        <input type="text" id="novaTarefa">
-        <button id="adicionarTarefas"> adicionar </button>
-        <button id="limpar"> limpar tarefas </button>
+        <img src="design/nomeInstagram.png" class="imagem">
+
+        <p class="descricao">Cadastre-se para ver fotos e vídeos<br> dos seus amigos.</p>
+
+        <button class="loginfacebook">Entrar com o Facebook</button>
+
+        <div class="conteinerInput">
+        <input id="email" type="email">
+        <input id="password" type="password">
+        <input id="firstName" type="text">
+        <input id="lastName" type="text">
+        </div>
+
+        <button class="btn" type="button" onclick="contactUs()">Registrar</button>
+
     </div>
 
-    <ul id="listaTarefas">
-
-    </ul>
-    
-
-    <script src="script.js"> </script>
-    
+    <script src="script.js"></script>
 </body>
 </html>

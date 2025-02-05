@@ -1,24 +1,36 @@
-document.getElementById("adicionarTarefas").addEventListener("click", function () {
+function contactUs(){
+    const firstName = document.querySelector("#firstName")
+    const lastName = document.querySelector("#lastName")
+    const email = document.querySelector("#email")
+    const message = document.querySelector("#message")
+    const btn = document.querySelector(".btn")
 
-    const inputTarefas = document.querySelector("#novaTarefa");
-    const tarefaTexto = inputTarefas.value;
+    const firstNameValue = document.querySelector("#firstName").value
+    const lastNameValue = document.querySelector("#lastName").value
+    const emailValue = document.querySelector("#email").value
+    const messageValue = document.querySelector("#message").value
 
-    if(tarefaTexto === ""){
-        alert("o campo não pode estar vazio!")
-    }    
+    if (firstNameValue === "") {
+        firstName.classList.add("erro")
+    } else {
+        firstName.classList.remove("erro")
+    }
 
-    const listaTarefas = document.querySelector("#listaTarefas")
+    if (lastNameValue === "") {
+        lastName.classList.add("erro")
+    } else {
+        lastName.classList.remove("erro")
+    }
 
-    // cria um elemento LI
-    const li = document.createElement("li")
-    li.textContent = tarefaTexto;
+    if (emailValue === "") {
+        email.classList.add("erro")
+    } else {
+        email.classList.remove("erro")
+    }
 
-    // adiciona li ao html
-
-    listaTarefas.appendChild(li)
-});
-
-document.getElementById("limpartarefas").addEventListener("click", function(){
-    const listaTarefas = document.querySelector("#listaTarefas")
-    listaTarefas.textContent = "";
-})
+    if (messageValue === "") {
+        message.classList.add("erro")
+    } else {
+        message.classList.remove("erro")
+    }
+}
