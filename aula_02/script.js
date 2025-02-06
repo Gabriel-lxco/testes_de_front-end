@@ -1,26 +1,14 @@
-function contactUs(){
-    const firstName = document.querySelector("#firstName")
-    const lastName = document.querySelector("#lastName")
+function instagram(){
     const email = document.querySelector("#email")
-    const message = document.querySelector("#message")
+    const password = document.querySelector("#password")
+    const primeiroNome = document.querySelector("#primeiroNome")
+    const nomeUsuario = document.querySelector("#nomeUsuario")
     const btn = document.querySelector(".btn")
 
-    const firstNameValue = document.querySelector("#firstName").value
-    const lastNameValue = document.querySelector("#lastName").value
     const emailValue = document.querySelector("#email").value
-    const messageValue = document.querySelector("#message").value
-
-    if (firstNameValue === "") {
-        firstName.classList.add("erro")
-    } else {
-        firstName.classList.remove("erro")
-    }
-
-    if (lastNameValue === "") {
-        lastName.classList.add("erro")
-    } else {
-        lastName.classList.remove("erro")
-    }
+    const passwordValue = document.querySelector("#password").value
+    const primeiroNomeValue = document.querySelector("#primeiroNome").value
+    const nomeUsuarioValue = document.querySelector("#nomeUsuario").value
 
     if (emailValue === "") {
         email.classList.add("erro")
@@ -28,9 +16,21 @@ function contactUs(){
         email.classList.remove("erro")
     }
 
-    if (messageValue === "") {
-        message.classList.add("erro")
+    if (passwordValue === "") {
+        password.classList.add("erro")
     } else {
-        message.classList.remove("erro")
+        password.classList.remove("erro")
+    }
+
+    if (primeiroNomeValue === "") {
+        primeiroNome.classList.add("erro")
+    } else {
+        primeiroNome.classList.remove("erro")
+    }
+
+    if (nomeUsuarioValue === "") {
+        nomeUsuario.classList.add("erro")
+    } else {
+        nomeUsuario.classList.remove("erro")
     }
 }

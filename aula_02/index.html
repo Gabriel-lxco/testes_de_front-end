@@ -1,32 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="conteiner">
+      <img src="design/nomeInstagram.png" class="imagem" />
 
-        <img src="design/nomeInstagram.png" class="imagem">
+      <p class="descricao">
+        Cadastre-se para ver fotos e vídeos<br />
+        dos seus amigos.
+      </p>
 
-        <p class="descricao">Cadastre-se para ver fotos e vídeos<br> dos seus amigos.</p>
-
+      <a href="https://www.facebook.com/?locale=pt_BR" target="_blank">
         <button class="loginfacebook">Entrar com o Facebook</button>
+      </a>
 
-        <div class="conteinerInput">
-        <input id="email" type="email">
-        <input id="password" type="password">
-        <input id="firstName" type="text">
-        <input id="lastName" type="text">
-        </div>
+      <div class="conteinerInput">
+        <input
+          id="email"
+          type="email"
+          placeholder="Número do celular ou email"
+        />
+      </div>
 
-        <button class="btn" type="button" onclick="contactUs()">Registrar</button>
+      <div class="conteinerInput">
+        <input id="password" type="password" placeholder="Senha" />
+      </div>
 
+      <div class="conteinerInput">
+        <input id="primeiroNome" type="text" placeholder="Nome completo" />
+      </div>
+
+      <div class="conteinerInput">
+        <input id="nomeUsuario" type="text" placeholder="Nome de usuário" />
+      </div>
+
+      <p>
+        As pessoas que usam nosso serviço podem ter enviado suas informações de
+        contato para o Instagram.
+        <a href="https://www.facebook.com/help/instagram/261704639352628"
+          >Saiba mais</a
+        >
+      </p>
+
+      <p>
+        Ao se cadastrar, você concorda com nossos <a href="">Termos</a>,
+        <a href="">Política de privacidade</a>
+        <a href="">Política de cookies</a>.
+      </p>
+
+      <button class="btn" type="button" onclick="instagram()">Registrar</button>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
