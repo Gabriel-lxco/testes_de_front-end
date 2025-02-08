@@ -1,52 +1,82 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
-main{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    width: 350px;
-    height: 750px;
-    border: black solid 1px;
-    font-size: 15px;
-    padding: 10px;
-    margin: 10px;
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 350px;
+  height: 750px;
+  border: black solid 1px;
+  font-size: 15px;
+  padding: 10px;
+  margin: 10px;
 }
 
-.imagem{
-    height: 50px;
-    width: 175px;
-    margin-top: 25px;
+.imagem {
+  height: 50px;
+  width: 175px;
+  margin-top: 25px;
 }
 
-.descricao{
-    font-size: 22px;
-    color: #808080;
+.descricao {
+  font-size: 22px;
 }
 
-p{
-    margin: 15px;
+p {
+  color: #808080;
+  margin: 20px;
 }
 
-button{
-    height: 40px;
-    width: 300px;
-    margin: 10px;
-    border-radius: 5px;
-   }
+a:visited {
+  color: blue;
+}
 
-.facebookBtn{
+a {
+  text-decoration: none;
+}
 
+button {
+  height: 40px;
+  width: 300px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  border-color: #0095f6;
+  background-color: #0095f6;
+  color: white;
+}
+
+.itens {
+  display: flex;
+  gap: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  height: 40px;
+  width: 300px;
+  margin: 10px;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+.erro {
+  border-color: red;
 }

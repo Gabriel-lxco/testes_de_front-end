@@ -1,26 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Cadastro instagram</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <main>
-        <img src="design/nomeInstagram.png" class="imagem" />
+      <img src="design/nomeInstagram.png" class="imagem" />
 
-        <p class="descricao">Cadastre-se para ver fotos e vídeos dos seus amigos.</p>
+      <p class="descricao">
+        Cadastre-se para ver fotos e vídeos dos seus amigos.
+      </p>
 
-        <button class="facebookBtn">Entrar com o facebook</button>
+      <button class="facebookBtn">Entrar com o facebook</button>
 
-        <form class="form">
+      <div class="itens">
+        <span class="line">----------</span>
 
-        </form>
+        <span>Ou</span>
+
+        <span class="line">----------</span>
+      </div>
+
+      <form class="form">
+        <input
+          id="email"
+          type="email"
+          placeholder="Número de celular ou email"
+        />
+
+        <input id="password" type="password" placeholder="Senha" />
+
+        <input id="nomeCompleto" type="text" placeholder="Nome Completo" />
+
+        <input id="nomeUsuario" type="text" placeholder="Nome de usuário" />
+      </form>
+
+      <p>
+        As pessoas que usam nosso serviço podem ter enviado suas informações de
+        contato para o Instagram.
+        <a
+          href="https://www.facebook.com/help/instagram/261704639352628"
+          target="_blank"
+          >Saiba mais</a
+        >
+      </p>
+
+      <p>
+        Ao se cadastrar, você concorda com nossos
+        <a
+          href="https://help.instagram.com/581066165581870/?locale=pt_BR"
+          target="_blank"
+          >Termos</a
+        >,
+        <a href="https://www.facebook.com/privacy/policy" target="_blank"
+          >Polítca de privacidade</a
+        >
+        e
+        <a
+          href="https://privacycenter.instagram.com/policies/cookies/"
+          target="_blank"
+          >Política de cookies</a
+        >.
+      </p>
+
+      <button id="btn" type="button">Cadastre-se</button>
     </main>
 
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>

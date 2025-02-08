@@ -1,33 +1,41 @@
-document.getElementById("btn").addEventListener("click", function(){
+document.getElementById("btn").addEventListener("click", function() {
+    const email = document.querySelector("#email");
+    const password = document.querySelector("#password");
+    const nomeCompleto = document.querySelector("#nomeCompleto");
+    const nomeUsuario = document.querySelector("#nomeUsuario");
 
+    let camposVazios = false;
 
-    //Capturei os elementos HTML
-    const email = document.querySelector("email")
-    const email = document.querySelector("email")
-    const email = document.querySelector("email")
-    const email = document.querySelector("email")
-
-    //Extrair valor digitado pelo usuário no campo de input
-
-    const emailValue = email.value()
-    const emailValue = email.value()
-    const emailValue = email.value()
-    const emailValue = email.value()
-
-    if(emailValue === ""){
-        email.classList.add("erro")
+    if (email.value.trim() === "") {
+        email.classList.add("erro");
+        camposVazios = true;
+    } else {
+        email.classList.remove("erro");
     }
 
-    if(emailValue === ""){
-        email.classList.add("erro")
+    if (password.value.trim() === "") {
+        password.classList.add("erro");
+        camposVazios = true;
+    } else {
+        password.classList.remove("erro");
     }
 
-    if(emailValue === ""){
-        email.classList.add("erro")
+    if (nomeCompleto.value.trim() === "") {
+        nomeCompleto.classList.add("erro");
+        camposVazios = true;
+    } else {
+        nomeCompleto.classList.remove("erro");
     }
 
-    if(emailValue === ""){
-        email.classList.add("erro")
+    if (nomeUsuario.value.trim() === "") {
+        nomeUsuario.classList.add("erro");
+        camposVazios = true;
+    } else {
+        nomeUsuario.classList.remove("erro");
     }
 
-})
+    if (!camposVazios) {
+        alert("Cadastro realizado com sucesso!");
+        window.location.href = "pagina_bemVindo.html";
+    }
+});
