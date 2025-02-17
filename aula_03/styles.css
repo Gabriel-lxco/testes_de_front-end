@@ -5,29 +5,22 @@
 }
 
 :root {
-  --wt-background: #f5f5f5;
-  --wt-text: #333333;
-  --wt-border: #dddddd;
-  --wt-links: #007bff;
-  --wt-buttonDarkMode: #444444;
-  --wt-header: #ffffff;
-  --wt-container: #ffffff;
-  --wt-footer: #222222;
-  --bt-background: #181818;
-  --bt-text: #e0e0e0;
-  --bt-border: #444444;
-  --bt-links: #66b2ff;
-  --bt-buttonDarkMode: #cccccc;
-  --bt-header: #282828;
-  --bt-container: #2c2c2c;
-  --bt-footer: #121212;
+  --green-700: #072623;
+  --green-600: #09403a;
+  --green-800: #021a17;
+  --green-500: #0b5a52;
+  --green-400: #0d756a;
+  --gray-200: #8c8c8c;
+  --black: #02110d;
+  --white: #f2f2f2;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  height: 100vh;
   color: var(--wt-text);
   line-height: 1.6;
-  background-color: var(--wt-background);
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,7 +30,8 @@ body {
 main {
   display: flex;
   justify-content: center;
-  border: solid red 1px;
+  align-items: center;
+  flex: 1;
 }
 
 h1,
@@ -45,7 +39,6 @@ h2,
 h3,
 h4 {
   font-family: "Montserrat", sans-serif;
-  color: #222222;
   font-weight: bold;
 }
 
@@ -54,72 +47,113 @@ button {
 }
 
 header {
-  background-color: var(--wt-header);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green-700);
+  color: var(--white);
+  height: 4rem;
   text-align: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green-700);
+  height: 3rem;
+  color: var(--white);
+}
+
+.img-perfil {
+  height: 150px;
+  height: 150px;
+  border-radius: 100%;
 }
 
 .container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 600px;
-  width: 300px;
-  gap: 1.5rem;
-  background-color: var(--wt-container);
-  border: red solid 1px;
-}
-
-img {
-  border-radius: 100%;
-  height: 10rem;
-  width: 10rem;
-}
-
-p,
-span {
-  color: var(--wt-text);
-  gap: 1.5rem;
-}
-
-.userName-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-}
-
-.userName {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333333;
-}
-
-.edit-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #007bff;
-  font-size: 1.2rem;
-}
-
-.edit-btn i {
-  transition: color 0.3s;
-}
-
-.edit-btn:hover i {
-  color: #0056b3;
-}
-
-
-.interesse01,
-.interesse02,
-.interesse03{
-  padding: 10px;
-  background-color: black;
-  margin: 3px;
+  flex-direction: column;
+  background-color: var(--green-600);
   border-radius: 16px;
-  color: white;
+  height: 600px;
+  width: 350px;
+  gap: 0.725rem;
+  border: var(--black) 2px solid;
+  color: var(--white);
+}
 
+.contaienr h1 {
+  font-size: bold;
+}
+
+.interesses {
+  margin-top: 10px;
+}
+
+.interesse {
+  padding: 10px;
+  background-color: var(--green-800);
+  color: var(--white);
+  border-radius: 16px;
+}
+
+body.modo-claro {
+  background: white;
+  color: black;
+}
+
+body.modo-escuro {
+  background: black;
+  color: white;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 32px;
+  background: var(--white);
+  color: var(--black);
+  transition: background 0.3s ease, color 1s ease;
+}
+
+body.modo-escuro button {
+  background: white;
+  color: black;
+}
+
+button:hover {
+  background: var(--green-600);
+  color: var(--white);
+  border: var(--white) 2px solid;
+}
+
+body.modo-escuro button {
+  background: var(--white);
+  color: var(--black);
+  border: 2px solid var(--white);
+}
+
+body.modo-escuro button:hover {
+  background: var(--green-400);
+  color: var(--white);
+  border-color: var(--white);
+}
+
+body.modo-escuro .container {
+  background-color: var(--green-400);
+}
+
+body.modo-escuro header {
+  background-color: var(--green-400);
+}
+
+body.modo-escuro footer {
+  background-color: var(--green-400);
 }
