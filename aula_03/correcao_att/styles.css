@@ -1,0 +1,42 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header, footer{
+  background-color: #f23005;
+  color: white;
+  text-align: center;
+}
+
+main{
+  color: #f23005;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img-peppa{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+button{
+  border: 1px solid #f23005;
+  background-color: #bfbfbf;
+  padding: 10px;
+  color: #f23005;
+  cursor: pointer;
+}
+
+.modo-escuro{
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}

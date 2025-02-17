@@ -111,3 +111,15 @@ span {
 .edit-btn:hover i {
   color: #0056b3;
 }
+
+
+.interesse01,
+.interesse02,
+.interesse03{
+  padding: 10px;
+  background-color: black;
+  margin: 3px;
+  border-radius: 16px;
+  color: white;
+
+}
